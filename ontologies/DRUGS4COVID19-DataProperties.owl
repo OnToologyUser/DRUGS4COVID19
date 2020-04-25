@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/DRUGS4COVID19#"
+     xml:base="https://w3id.org/def/DRUGS4COVID19"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/def/DRUGS4COVID19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#abstract -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#abstract">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Resumen del artículo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Resumen</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#codigoATC1 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#codigoATC1">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código de primer nivel (anatómico):  órgano  o  sistema  sobre  el  que actúa el fármaco (existen 14 grupos en total).</rdfs:comment>
+        <rdfs:label xml:lang="es">Código ATC1</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#codigoATC2 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#codigoATC2">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código de segundo nivel: subgrupo terapéutico</rdfs:comment>
+        <rdfs:label xml:lang="es">Código ATC2</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#codigoATC3 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#codigoATC3">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código de tercer nivel: subgrupo terapéutico o farmacológico.</rdfs:comment>
+        <rdfs:label xml:lang="es">Código ATC3</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#codigoATC4 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#codigoATC4">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Código ATC4</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#codigoATC5 -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#codigoATC5">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Código ATC5</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#codigoMesh -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#codigoMesh">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Código MESH del medicamento.</rdfs:comment>
+        <rdfs:label xml:lang="es">Código MESH</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#identificador -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#identificador">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Identificador del recurso</rdfs:comment>
+        <rdfs:label xml:lang="es">Identificador</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#licencia -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#licencia">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Licencia del artículo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Licencia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#nombreCientifico -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#nombreCientifico">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Nombre científico del medicamento</rdfs:comment>
+        <rdfs:label xml:lang="es">Nombre científico</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#nombreMedicamento -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#nombreMedicamento">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Nombre del medicamento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#nombrePrincipioActivo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#nombrePrincipioActivo">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Nombre del principio activo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#problema -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#problema">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Problema que aborda el artículo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Problema</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#texto -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#texto">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Texto del artículo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Texto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#titulo -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#titulo">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="es">Título del artículo.</rdfs:comment>
+        <rdfs:label xml:lang="es">Título</rdfs:label>
+    </owl:DatatypeProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

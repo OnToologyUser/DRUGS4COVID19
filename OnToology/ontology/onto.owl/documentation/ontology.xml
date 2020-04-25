@@ -1,0 +1,695 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/def/DRUGS4COVID19#"
+     xml:base="https://w3id.org/def/DRUGS4COVID19"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/def/DRUGS4COVID19">
+        <dc:publisher rdf:resource="http://www.oeg-upm.net/"/>
+        <dc:title>Drugs for COVID-19</dc:title>
+        <terms:contributor rdf:resource="http://purl.org/net/mpoveda"/>
+        <terms:contributor xml:lang="es">Alba Fernández Izquierdo</terms:contributor>
+        <terms:contributor xml:lang="es">Ana Iglesias</terms:contributor>
+        <terms:contributor xml:lang="es">Carlos Badenes</terms:contributor>
+        <terms:contributor xml:lang="es">David Chaves Fraga</terms:contributor>
+        <terms:contributor xml:lang="es">Edna Ruckhaus</terms:contributor>
+        <terms:contributor xml:lang="es">Pablo Calleja</terms:contributor>
+        <terms:contributor xml:lang="es">Paola Espinoza Arias</terms:contributor>
+        <terms:contributor xml:lang="es">Socorro Bernardos Galindo</terms:contributor>
+        <terms:created xml:lang="es">2020-04-04</terms:created>
+        <terms:creator rdf:resource="http://www.oeg-upm.net/"/>
+        <terms:description xml:lang="es">Esta ontología describe los artículos y medicamentos  relacionados con el COVID-19 que se encuentran en el corpus de de artículos relacionados con los corona virus del Allen Institute of Artificial Intelligence, con el objetivo de encontrar las respuestas a los desafíos que está planteando el COVID-19.</terms:description>
+        <terms:description xml:lang="en">This ontology aims to model the  knoeledge from the huge corpus of coronavirus-related papers (using currently the CORD-19 dataset from the Allen Institute of Artificial Intelligence), with the goal of finding answers to the challenges that COVID-19 is posing to the world.</terms:description>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/cc-by4.0"/>
+        <vann:preferredNamespacePrefix>d4covid</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/def/DRUGS4COVID19"/>
+        <rdfs:seeAlso rdf:resource="http://drugs4covid.oeg-upm.net"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#causedByDrug -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#causedByDrug">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#hasEffect"/>
+        <rdfs:label xml:lang="es">Causado por medicamento</rdfs:label>
+        <rdfs:label xml:lang="en">Caused by drug</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#contains">
+        <rdfs:label xml:lang="en">Contains</rdfs:label>
+        <rdfs:label xml:lang="es">Contiene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#esTratadaConMedicamento -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#esTratadaConMedicamento">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#trataEnfermedad"/>
+        <rdfs:label xml:lang="es">es tratada con medicamento</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#hasActiveSubstance -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#hasActiveSubstance">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#isActiveSubstanceOfDrug"/>
+        <rdfs:label xml:lang="en">Has active substance</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene principio activo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#hasEffect -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#hasEffect">
+        <rdfs:label xml:lang="en">Has effect</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene efecto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#hasSymptom -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#hasSymptom">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#isSymptomOfDisease"/>
+        <rdfs:label xml:lang="en">Has symptom</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene síntoma</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#isActiveSubstanceOfDrug -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#isActiveSubstanceOfDrug">
+        <rdfs:label xml:lang="es">Es principio activo de medicamento</rdfs:label>
+        <rdfs:label xml:lang="en">Is active substance of drug</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#isContraindicatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#isContraindicatedTo">
+        <rdfs:label xml:lang="es">Está contraindicado para</rdfs:label>
+        <rdfs:label xml:lang="en">Is contraindicated to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#isSymptomOfDisease -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#isSymptomOfDisease">
+        <rdfs:label xml:lang="es">Es síntoma de enfermedad</rdfs:label>
+        <rdfs:label xml:lang="en">Is symptom of disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#isTreatedWithDrug -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#isTreatedWithDrug">
+        <owl:inverseOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#treatsDisorder"/>
+        <rdfs:label xml:lang="es">Es tratado con medicamento</rdfs:label>
+        <rdfs:label xml:lang="en">Is treated with drug</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#mentions -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#mentions">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/def/DRUGS4COVID19#Paper"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/DRUGS4COVID19#Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/def/DRUGS4COVID19#ChemicalSubstance"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/DRUGS4COVID19#Disease"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/DRUGS4COVID19#Drug"/>
+                    <rdf:Description rdf:about="https://w3id.org/def/DRUGS4COVID19#Symptom"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="es">Menciona</rdfs:label>
+        <rdfs:label xml:lang="en">Mentions</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#prevents -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#prevents">
+        <rdfs:label xml:lang="en">Prevents</rdfs:label>
+        <rdfs:label xml:lang="es">Previene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#trataEnfermedad -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#trataEnfermedad">
+        <rdfs:label xml:lang="es">trata enfermedad</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#treatsDisorder -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#treatsDisorder">
+        <rdfs:label xml:lang="es">Trata desorden</rdfs:label>
+        <rdfs:label xml:lang="en">Treats disorder</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/elements/1.1/license">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Licencia</rdfs:label>
+        <rdfs:label xml:lang="en">License</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/abstract">
+        <rdfs:label xml:lang="en">Abstract</rdfs:label>
+        <rdfs:label xml:lang="es">Resumen</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Fuente</rdfs:label>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <rdfs:label xml:lang="es">Título</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ATC1Code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#ATC1Code">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">ATC1 code</rdfs:label>
+        <rdfs:label xml:lang="es">Código ATC1</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ATC2Code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#ATC2Code">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">ATC2 code</rdfs:label>
+        <rdfs:label xml:lang="es">Código ATC2</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ATC3Code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#ATC3Code">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">ATC3 code</rdfs:label>
+        <rdfs:label xml:lang="es">Código ATC3</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ATC4Code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#ATC4Code">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">ATC4 code</rdfs:label>
+        <rdfs:label xml:lang="es">Código ATC4</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ATC5Code -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#ATC5Code">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">ATC5 code</rdfs:label>
+        <rdfs:label xml:lang="es">Código ATC5</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#MESHCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#MESHCode">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Código MESH</rdfs:label>
+        <rdfs:label xml:lang="en">MESH code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#MESHLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#MESHLevel">
+        <rdfs:label xml:lang="en">MESH level</rdfs:label>
+        <rdfs:label xml:lang="es">nivel MESH</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#SNOMEDCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#SNOMEDCode">
+        <rdfs:label xml:lang="en">SNOMED code</rdfs:label>
+        <rdfs:label>Código SNOMED</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#activeSubstanceName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#activeSubstanceName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Active substance name</rdfs:label>
+        <rdfs:label xml:lang="es">Nombre del princpio activo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#disorderName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#disorderName">
+        <rdfs:label xml:lang="en">Disorder name</rdfs:label>
+        <rdfs:label xml:lang="es">Nombre del desorden</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#drugName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#drugName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Drug name</rdfs:label>
+        <rdfs:label xml:lang="es">Nombre del medicamento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#identifier">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Identificador</rdfs:label>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#problem -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#problem">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Problem</rdfs:label>
+        <rdfs:label xml:lang="es">Problema</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#scientificName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#scientificName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="es">Nombre científico</rdfs:label>
+        <rdfs:label xml:lang="en">Scientific name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#text -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/DRUGS4COVID19#text">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+        <rdfs:label xml:lang="es">Texto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/BibliographicResource -->
+
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/BibliographicResource">
+        <rdfs:label xml:lang="en">Bibliographic resource</rdfs:label>
+        <rdfs:label xml:lang="es">Recurso bibliográfico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ActiveSubstance -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#ActiveSubstance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#ChemicalSubstance"/>
+        <rdfs:label xml:lang="en">Active substance</rdfs:label>
+        <rdfs:label xml:lang="es">Principio activo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#ChemicalSubstance -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#ChemicalSubstance">
+        <rdfs:label xml:lang="en">Chemical substance</rdfs:label>
+        <rdfs:label xml:lang="es">Compuesto quimico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Disease -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Disease">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#Disorder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#hasSymptom"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#Symptom"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+        <rdfs:label xml:lang="es">Enfermedad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Disorder -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Disorder">
+        <rdfs:label xml:lang="es">Desorden</rdfs:label>
+        <rdfs:label xml:lang="en">Disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Drug -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Drug">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#hasActiveSubstance"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#ActiveSubstance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#hasEffect"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#Effect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#isContraindicatedTo"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#Disorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#treatsDisorder"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#Disorder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Drug</rdfs:label>
+        <rdfs:label xml:lang="es">Medicamento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Effect -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Effect">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#causedByDrug"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#Drug"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">Efecto</rdfs:label>
+        <rdfs:label xml:lang="en">Effect</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Paper -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Paper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/BibliographicResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/DRUGS4COVID19#contains"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/DRUGS4COVID19#Sentence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="es">Comunicación</rdfs:label>
+        <rdfs:label xml:lang="en">Paper</rdfs:label>
+        <rdfs:label xml:lang="es">Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Paragraph -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Paragraph">
+        <rdfs:label xml:lang="en">Paragraph</rdfs:label>
+        <rdfs:label xml:lang="es">Párrafo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Sentence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Sentence">
+        <rdfs:label xml:lang="es">Frase</rdfs:label>
+        <rdfs:label xml:lang="en">Sentence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/DRUGS4COVID19#Symptom -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/DRUGS4COVID19#Symptom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/DRUGS4COVID19#Disorder"/>
+        <rdfs:label xml:lang="en">Symptom</rdfs:label>
+        <rdfs:label xml:lang="es">Síntoma</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

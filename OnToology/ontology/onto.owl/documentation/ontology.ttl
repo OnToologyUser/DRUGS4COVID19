@@ -1,0 +1,423 @@
+@prefix : <https://w3id.org/def/DRUGS4COVID19#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/def/DRUGS4COVID19> .
+
+<https://w3id.org/def/DRUGS4COVID19> rdf:type owl:Ontology ;
+                                      <http://purl.org/dc/elements/1.1/publisher> <http://www.oeg-upm.net/> ;
+                                      <http://purl.org/dc/elements/1.1/title> "Drugs for COVID-19" ;
+                                      <http://purl.org/dc/terms/contributor> <http://purl.org/net/mpoveda> ,
+                                                                             "Alba Fernández Izquierdo"@es ,
+                                                                             "Ana Iglesias"@es ,
+                                                                             "Carlos Badenes"@es ,
+                                                                             "David Chaves Fraga"@es ,
+                                                                             "Edna Ruckhaus"@es ,
+                                                                             "Pablo Calleja"@es ,
+                                                                             "Paola Espinoza Arias"@es ,
+                                                                             "Socorro Bernardos Galindo"@es ;
+                                      <http://purl.org/dc/terms/created> "2020-04-04"@es ;
+                                      <http://purl.org/dc/terms/creator> <http://www.oeg-upm.net/> ;
+                                      <http://purl.org/dc/terms/description> "Esta ontología describe los artículos y medicamentos  relacionados con el COVID-19 que se encuentran en el corpus de de artículos relacionados con los corona virus del Allen Institute of Artificial Intelligence, con el objetivo de encontrar las respuestas a los desafíos que está planteando el COVID-19."@es ,
+                                                                             "This ontology aims to model the  knoeledge from the huge corpus of coronavirus-related papers (using currently the CORD-19 dataset from the Allen Institute of Artificial Intelligence), with the goal of finding answers to the challenges that COVID-19 is posing to the world."@en ;
+                                      <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/cc-by4.0> ;
+                                      <http://purl.org/vocab/vann/preferredNamespacePrefix> "d4covid" ;
+                                      <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/def/DRUGS4COVID19> ;
+                                      rdfs:seeAlso <http://drugs4covid.oeg-upm.net> ;
+                                      owl:versionInfo 0.3 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty ;
+                                        rdfs:range xsd:string .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/def/DRUGS4COVID19#causedByDrug
+:causedByDrug rdf:type owl:ObjectProperty ;
+              owl:inverseOf :hasEffect ;
+              rdfs:label "Causado por medicamento"@es ,
+                         "Caused by drug"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:label "Contains"@en ,
+                     "Contiene"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#esTratadaConMedicamento
+:esTratadaConMedicamento rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :trataEnfermedad ;
+                         rdfs:label "es tratada con medicamento"@es ;
+                         owl:deprecated "true"^^xsd:boolean .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#hasActiveSubstance
+:hasActiveSubstance rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :isActiveSubstanceOfDrug ;
+                    rdfs:label "Has active substance"@en ,
+                               "Tiene principio activo"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#hasEffect
+:hasEffect rdf:type owl:ObjectProperty ;
+           rdfs:label "Has effect"@en ,
+                      "Tiene efecto"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#hasSymptom
+:hasSymptom rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isSymptomOfDisease ;
+            rdfs:label "Has symptom"@en ,
+                       "Tiene síntoma"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#isActiveSubstanceOfDrug
+:isActiveSubstanceOfDrug rdf:type owl:ObjectProperty ;
+                         rdfs:label "Es principio activo de medicamento"@es ,
+                                    "Is active substance of drug"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#isContraindicatedTo
+:isContraindicatedTo rdf:type owl:ObjectProperty ;
+                     rdfs:label "Está contraindicado para"@es ,
+                                "Is contraindicated to"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#isSymptomOfDisease
+:isSymptomOfDisease rdf:type owl:ObjectProperty ;
+                    rdfs:label "Es síntoma de enfermedad"@es ,
+                               "Is symptom of disease"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#isTreatedWithDrug
+:isTreatedWithDrug rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :treatsDisorder ;
+                   rdfs:label "Es tratado con medicamento"@es ,
+                              "Is treated with drug"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#mentions
+:mentions rdf:type owl:ObjectProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Paper
+                                      :Sentence
+                                    )
+                      ] ;
+          rdfs:range [ rdf:type owl:Class ;
+                       owl:unionOf ( :ChemicalSubstance
+                                     :Disease
+                                     :Drug
+                                     :Symptom
+                                   )
+                     ] ;
+          rdfs:label "Menciona"@es ,
+                     "Mentions"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#prevents
+:prevents rdf:type owl:ObjectProperty ;
+          rdfs:label "Prevents"@en ,
+                     "Previene"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#trataEnfermedad
+:trataEnfermedad rdf:type owl:ObjectProperty ;
+                 rdfs:label "trata enfermedad"@es ;
+                 owl:deprecated "true"^^xsd:boolean .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#treatsDisorder
+:treatsDisorder rdf:type owl:ObjectProperty ;
+                rdfs:label "Trata desorden"@es ,
+                           "Treats disorder"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/license
+<http://purl.org/dc/elements/1.1/license> rdf:type owl:DatatypeProperty ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:label "Licencia"@es ,
+                                                     "License"@en .
+
+
+###  http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> rdf:type owl:DatatypeProperty ;
+                                    rdfs:label "Abstract"@en ,
+                                               "Resumen"@es .
+
+
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:DatatypeProperty ;
+                                rdfs:range rdfs:Literal ;
+                                rdfs:label "Date"@en ,
+                                           "Fecha"@es .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:DatatypeProperty ;
+                                  rdfs:range xsd:string ;
+                                  rdfs:label "Fuente"@es ,
+                                             "Source"@en .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:DatatypeProperty ;
+                                 rdfs:label "Title"@en ,
+                                            "Título"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ATC1Code
+:ATC1Code rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "ATC1 code"@en ,
+                     "Código ATC1"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ATC2Code
+:ATC2Code rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "ATC2 code"@en ,
+                     "Código ATC2"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ATC3Code
+:ATC3Code rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "ATC3 code"@en ,
+                     "Código ATC3"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ATC4Code
+:ATC4Code rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "ATC4 code"@en ,
+                     "Código ATC4"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ATC5Code
+:ATC5Code rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "ATC5 code"@en ,
+                     "Código ATC5"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#MESHCode
+:MESHCode rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "Código MESH"@es ,
+                     "MESH code"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#MESHLevel
+:MESHLevel rdf:type owl:DatatypeProperty ;
+           rdfs:label "MESH level"@en ,
+                      "nivel MESH"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#SNOMEDCode
+:SNOMEDCode rdf:type owl:DatatypeProperty ;
+            rdfs:label "SNOMED code"@en ,
+                       "Código SNOMED" .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#activeSubstanceName
+:activeSubstanceName rdf:type owl:DatatypeProperty ;
+                     rdfs:range xsd:string ;
+                     rdfs:label "Active substance name"@en ,
+                                "Nombre del princpio activo"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#disorderName
+:disorderName rdf:type owl:DatatypeProperty ;
+              rdfs:label "Disorder name"@en ,
+                         "Nombre del desorden"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#drugName
+:drugName rdf:type owl:DatatypeProperty ;
+          rdfs:range xsd:string ;
+          rdfs:label "Drug name"@en ,
+                     "Nombre del medicamento"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "Identificador"@es ,
+                       "Identifier"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#problem
+:problem rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:label "Problem"@en ,
+                    "Problema"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#scientificName
+:scientificName rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:string ;
+                rdfs:label "Nombre científico"@es ,
+                           "Scientific name"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:label "Text"@en ,
+                 "Texto"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/dc/terms/BibliographicResource
+<http://purl.org/dc/terms/BibliographicResource> rdf:type owl:Class ;
+                                                 rdfs:label "Bibliographic resource"@en ,
+                                                            "Recurso bibliográfico"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ActiveSubstance
+:ActiveSubstance rdf:type owl:Class ;
+                 rdfs:subClassOf :ChemicalSubstance ;
+                 rdfs:label "Active substance"@en ,
+                            "Principio activo"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#ChemicalSubstance
+:ChemicalSubstance rdf:type owl:Class ;
+                   rdfs:label "Chemical substance"@en ,
+                              "Compuesto quimico"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Disease
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf :Disorder ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasSymptom ;
+                           owl:someValuesFrom :Symptom
+                         ] ;
+         rdfs:label "Disease"@en ,
+                    "Enfermedad"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Disorder
+:Disorder rdf:type owl:Class ;
+          rdfs:label "Desorden"@es ,
+                     "Disorder"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Drug
+:Drug rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasActiveSubstance ;
+                        owl:someValuesFrom :ActiveSubstance
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasEffect ;
+                        owl:someValuesFrom :Effect
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :isContraindicatedTo ;
+                        owl:someValuesFrom :Disorder
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :treatsDisorder ;
+                        owl:someValuesFrom :Disorder
+                      ] ;
+      rdfs:label "Drug"@en ,
+                 "Medicamento"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Effect
+:Effect rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :causedByDrug ;
+                          owl:someValuesFrom :Drug
+                        ] ;
+        rdfs:label "Efecto"@es ,
+                   "Effect"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Paper
+:Paper rdf:type owl:Class ;
+       rdfs:subClassOf <http://purl.org/dc/terms/BibliographicResource> ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :contains ;
+                         owl:someValuesFrom :Sentence
+                       ] ;
+       rdfs:label "Comunicación"@es ,
+                  "Paper"@en ,
+                  "Paper"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Paragraph
+:Paragraph rdf:type owl:Class ;
+           rdfs:label "Paragraph"@en ,
+                      "Párrafo"@es .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Sentence
+:Sentence rdf:type owl:Class ;
+          rdfs:label "Frase"@es ,
+                     "Sentence"@en .
+
+
+###  https://w3id.org/def/DRUGS4COVID19#Symptom
+:Symptom rdf:type owl:Class ;
+         rdfs:subClassOf :Disorder ;
+         rdfs:label "Symptom"@en ,
+                    "Síntoma"@es .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
