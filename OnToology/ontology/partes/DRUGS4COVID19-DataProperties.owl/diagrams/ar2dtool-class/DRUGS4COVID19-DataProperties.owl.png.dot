@@ -1,0 +1,20 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"owl:Thing" -> "xsd:string" [ label = "base:nombreCientifico" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:codigoMesh" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:identificador" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:licencia" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:codigoATC3" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:nombrePrincipioActivo" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:codigoATC4" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:codigoATC5" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:problema" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:nombreMedicamento" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:texto" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:abstract" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:codigoATC1" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:codigoATC2" ];
+	"owl:Thing" -> "xsd:string" [ label = "base:titulo" ];
+
+}

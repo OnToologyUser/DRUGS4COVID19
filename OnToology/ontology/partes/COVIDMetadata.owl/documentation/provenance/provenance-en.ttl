@@ -1,0 +1,28 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Drugs for COVID-19";
+	 prov:wasAttributedTo <http://www.oeg-upm.net/>;
+	 dc:creator <http://www.oeg-upm.net/>;
+	 prov:wasAttributedTo <http://purl.org/net/mpoveda>;
+	 dc:contributor <http://purl.org/net/mpoveda>;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo :agent7;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2020-04-04";
+.
+:agent0 a prov:Agent; foaf:name "Alba Fernández Izquierdo".
+:agent1 a prov:Agent; foaf:name "Ana Iglesias".
+:agent2 a prov:Agent; foaf:name "Carlos Badenes".
+:agent3 a prov:Agent; foaf:name "David Chaves Fraga".
+:agent4 a prov:Agent; foaf:name "Edna Ruckhaus".
+:agent5 a prov:Agent; foaf:name "Pablo Calleja".
+:agent6 a prov:Agent; foaf:name "Paola Espinoza Arias".
+:agent7 a prov:Agent; foaf:name "Socorro Bernardos Galindo".

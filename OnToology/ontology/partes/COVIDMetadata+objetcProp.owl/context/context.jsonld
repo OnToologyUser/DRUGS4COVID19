@@ -1,0 +1,76 @@
+{
+  "@context" : {
+    "esTratadaConMedicamento" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#esTratadaConMedicamento",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "trataEnfermedad" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#trataEnfermedad",
+      "@type" : "@id"
+    },
+    "menciona" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#menciona",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "contiene" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#contiene",
+      "@type" : "@id"
+    },
+    "tienePrincipioActivo" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#tienePrincipioActivo",
+      "@type" : "@id"
+    },
+    "esSintomaDeEnfermedad" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#esSintomaDeEnfermedad",
+      "@type" : "@id"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "tieneEfecto" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#tieneEfecto",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "tieneSintoma" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#tieneSintoma",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "causadoPorMedicamento" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#causadoPorMedicamento",
+      "@type" : "@id"
+    }
+  }
+}

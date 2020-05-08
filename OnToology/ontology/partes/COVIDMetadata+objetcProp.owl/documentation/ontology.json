@@ -1,0 +1,193 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/publisher" : [ {
+    "@id" : "http://www.oeg-upm.net/"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Drugs for COVID-19"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@id" : "http://purl.org/net/mpoveda"
+  }, {
+    "@language" : "es",
+    "@value" : "Alba Fernández Izquierdo"
+  }, {
+    "@language" : "es",
+    "@value" : "Ana Iglesias"
+  }, {
+    "@language" : "es",
+    "@value" : "Carlos Badenes"
+  }, {
+    "@language" : "es",
+    "@value" : "David Chaves Fraga"
+  }, {
+    "@language" : "es",
+    "@value" : "Edna Ruckhaus"
+  }, {
+    "@language" : "es",
+    "@value" : "Pablo Calleja"
+  }, {
+    "@language" : "es",
+    "@value" : "Paola Espinoza Arias"
+  }, {
+    "@language" : "es",
+    "@value" : "Socorro Bernardos Galindo"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@language" : "es",
+    "@value" : "2020-04-04"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://www.oeg-upm.net/"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "es",
+    "@value" : "Esta ontología describe los medicamentos y sus relaciones relacionados con el COVID-19. Se desarrolla en el contexto del hackathon #VenceAlVirus organizado por la Comunidad de Madrid y la Consejería de Ciencia, Universidades e Innovación, con el objetivo de encontrar las respuestas a los desafíos que está planteando el COVID-19."
+  }, {
+    "@language" : "en",
+    "@value" : "This ontology aims to model the drugs and their relations related to the COVID-19 in the context of the Hackathon #VenceAlVirus organised by the Comunidad de Madrid and the Consejería de Ciencia, Universidades e Innovación with the goal of finding answers to the challenges that COVID-19 is posing to the world."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "d4covid"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://taiga.vencealvirus.software.imdea.org/project/ocorcho-salud-un-catalogo-de-medicamentos-usados-para-combatir-el-covid-19-segun-la-literatura-cientifica-y-aplicando-tecnicas-de-inteligencia-artificial-y-ciencia-ciudadana/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#causadoPorMedicamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "causado por medicamento"
+  }, {
+    "@language" : "en",
+    "@value" : "caused by drug"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19#tieneEfecto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#contiene",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains"
+  }, {
+    "@language" : "es",
+    "@value" : "contiene"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#esSintomaDeEnfermedad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "es síntoma de enfermedad"
+  }, {
+    "@language" : "en",
+    "@value" : "is symptom of disease"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19#tieneSintoma"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#esTratadaConMedicamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "es tratada con medicamento"
+  }, {
+    "@language" : "en",
+    "@value" : "is treated with drug"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19#trataEnfermedad"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#menciona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "menciona"
+  }, {
+    "@language" : "en",
+    "@value" : "mentions"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#tieneEfecto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has effect"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene efecto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#tienePrincipioActivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has active ingredient"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene principio activo"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#tieneSintoma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has symptom"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene síntoma"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#trataEnfermedad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "trata enfermedad"
+  }, {
+    "@language" : "en",
+    "@value" : "treats disease"
+  } ]
+} ]

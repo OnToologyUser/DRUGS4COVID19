@@ -1,0 +1,8 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:PrincipioActivo" "base:Paper" "base:CompuestoQuimico" "http://purl.org/dc/terms/bibliographicCitation" ; /*classes style*/
+	"base:Paper" -> "http://purl.org/dc/terms/bibliographicCitation" [ label = "rdfs:subClassOf" ];
+	"base:PrincipioActivo" -> "base:CompuestoQuimico" [ label = "rdfs:subClassOf" ];
+
+}

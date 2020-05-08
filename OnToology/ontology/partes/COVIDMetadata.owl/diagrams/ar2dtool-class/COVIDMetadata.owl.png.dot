@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+	"https://w3id.org/def/DRUGS4COVID19" -> "https://w3id.org/def/DRUGS4COVID19" [ label = "vann:preferredNamespaceUri" ];
+	"https://w3id.org/def/DRUGS4COVID19" -> "http://www.oeg-upm.net/" [ label = "terms:creator" ];
+	"https://w3id.org/def/DRUGS4COVID19" -> "http://www.oeg-upm.net/" [ label = "dc:publisher" ];
+	"https://w3id.org/def/DRUGS4COVID19" -> "http://purl.org/net/mpoveda" [ label = "terms:contributor" ];
+	"https://w3id.org/def/DRUGS4COVID19" -> "https://taiga.vencealvirus.software.imdea.org/project/ocorcho-salud-un-catalogo-de-medicamentos-usados-para-combatir-el-covid-19-segun-la-literatura-cientifica-y-aplicando-tecnicas-de-inteligencia-artificial-y-ciencia-ciudadana/" [ label = "rdfs:seeAlso" ];
+	"https://w3id.org/def/DRUGS4COVID19" -> "http://purl.org/NET/rdflicense/cc-by4.0" [ label = "terms:license" ];
+
+}

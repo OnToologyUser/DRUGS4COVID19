@@ -1,0 +1,73 @@
+{
+  "@context" : {
+    "abstract" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#abstract",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoATC5" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#codigoATC5",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "titulo" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#titulo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identificador" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#identificador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "codigoATC3" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#codigoATC3",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "nombreCientifico" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#nombreCientifico",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoATC1" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#codigoATC1",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoMesh" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#codigoMesh",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "problema" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#problema",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoATC2" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#codigoATC2",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoATC4" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#codigoATC4",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "licencia" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#licencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "nombrePrincipioActivo" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#nombrePrincipioActivo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "texto" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#texto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "nombreMedicamento" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#nombreMedicamento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

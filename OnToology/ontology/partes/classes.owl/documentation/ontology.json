@@ -1,0 +1,69 @@
+[ {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#CompuestoQuimico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Compuesto quimico"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Efecto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Efecto"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Enfermedad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Enfermedad"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Frase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Frase"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Medicamento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Medicamento"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Paper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Paper"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#PrincipioActivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Principio activo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/def/DRUGS4COVID19#CompuestoQuimico"
+  } ]
+}, {
+  "@id" : "https://w3id.org/def/DRUGS4COVID19#Sintoma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Síntoma"
+  } ]
+} ]

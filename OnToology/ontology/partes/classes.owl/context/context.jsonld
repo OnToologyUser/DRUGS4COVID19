@@ -1,0 +1,34 @@
+{
+  "@context" : {
+    "CompuestoQuimico" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#CompuestoQuimico"
+    },
+    "Enfermedad" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#Enfermedad"
+    },
+    "PrincipioActivo" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#PrincipioActivo"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Paper" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#Paper"
+    },
+    "Medicamento" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#Medicamento"
+    },
+    "Sintoma" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#Sintoma"
+    },
+    "Frase" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#Frase"
+    },
+    "Efecto" : {
+      "@id" : "https://w3id.org/def/DRUGS4COVID19#Efecto"
+    }
+  }
+}
